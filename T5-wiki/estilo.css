@@ -1,12 +1,16 @@
+h3{
+    text-transform: uppercase;
+    text-align: center;
+}
 #cont {
-	background-color:#99ff99;
+	background: linear-gradient(to bottom left, white, #f49842);
 	
 }
 #links ul{
 	list-style-type: none;
 	line-height: 3em;
 }
-img{
+#cabecera img{
     max-width: 500px;
     max-height: 150px;
     min-width: 200px;
@@ -16,91 +20,165 @@ img{
     display: block;
     margin: 0 auto;
 }
-#cabecera {
-	
-	border-style: solid;
-}
+
+
 #menu {
-	 border: solid black 2px;
-    border-radius: 5px;
-    margin-right: 5%;
-    margin-left: 5%;
-    background-color: #ff751b;
-    height: 40px;
+    width: auto;
+    overflow: hidden;					/* MENU NAVEGADOR */
+	margin: 0 auto;
+	margin-bottom: 3em;
+	
 }
+
 #menu ul {
-    text-align: center;
+    margin: 2% 0 2% 20%;
+    padding: .7em;							/* MENU NAVEGADOR */
+    float: left;
+	
+    list-style: none;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: .5em;    
+    box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 2px 1px rgba(0,0,0,.8) inset; 
 }
 
-#menu li {
-    display: inline;
-    margin: 0%;
-    padding: 0%;
+
+#menu li{
+	 float: left;
 }
 
-li a:hover{
-        animation: ampliar 1s;
+#menu a {
+    float:left;
+    padding: .8em 1.5em;
+    text-decoration: none;								/* MENU NAVEGADOR */
+    color: #555;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    font: bold 1.1em/1 'trebuchet MS', Arial, Helvetica;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff #ccc #999 #eee;
+    background: #c1c1c1;
+    background: linear-gradient(#f5f5f5, #c1c1c1);           
+ }
+
+#menu a:active {
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;				
 }
+ 
+#menu li:first-child a {
+    border-left: 0;
+    border-radius: 4px 0 0 4px;            
+}
+
+#menu li:last-child a {
+    border-right: 0;
+    border-radius: 0 4px 4px 0;            
+}
+
+#menu a:hover {
+    outline: 0;
+    color: #fff;											/* MENU RATON */
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    background: #f49842;
+    animation: ampliar 1s;
+    /*background: linear-gradient(#26b0ff, #17aaff);*/
+}
+
 @keyframes ampliar {
     5% {padding:11px;margin: -6px;}
 }
-#menu a {
-    color: #FFF;
-    display: inline;
-    width: 100%;
-    text-align: center;
-    margin: 0%;
-    border-radius: 5px;
-}
-
-#menu a:hover, #menu a:active {
-    background-color: grey;
-}
-#menu a:hover{
-    color: black;
-}
-
-#menu a{
-    color: grey;
-    text-decoration:none;
-}
-/*p a {
-	color:orange;
-}*/
 #content {
-	border-style: solid;
-	border-color: yellow;
 	display: flex;
 	flex-wrap: wrap;
 }
 #cont-flex{
-	border-style: solid;
-	border-color: blue;
-	flex:8 1 60%;
-	max-width: 70%;
+	
+	
 }
-.content-flex {
-	border-style: solid;
-	border-color: gray;
-}
+
 #links{
 	flex: 4 1 30%;
 	border-style:solid;
-	border-color:brown;
+	border-color:#f49842;
 	position: fixed;
-	right:2.5%;
+	right:3.5%;
 	top:35%;
+	padding: 1em;
+	border-bottom: solid gray;
+    border-right: solid gray;
+    border-radius: 1em;
+    font: bold 16px sans-serif;
+
+    background: linear-gradient(#f5f5f5, #c1c1c1);
 
 }
 
-#footer_ {
-	  text-align: right;
+#pie {
+	margin-top: 4%;
+	
+	text-align: right;
     color: #4d4d4d;
     width: 100%;
-    /*padding: 2%;*/
+    
+    
+    font: bold 16px sans-serif;
     display: block;
     position: relative;
     bottom: 0;
-    border-style:solid;
-	border-color:white;
+}
+.titulos{
+    background: linear-gradient(#f5f5f5, #c1c1c1);
+
+    text-align: center;
+	
+	border-top: solid #f49842;
+    border-left: solid #f49842;
+    border-radius: 0.5em;
+    border-bottom: solid gray;
+    border-right: solid gray;
+	padding:0 1em;
+    flex:8 1 60%;
+	max-width: 70%;
+    height: 3em;
+	
+}
+.parrafos{
+    /*tamaños*/
+    flex:8 1 60%;
+	max-width: 70%;
+    margin-top: 1em;
+    padding: 1em;
+
+    /*texto*/
+    
+    text-align: center;
+
+    /*fondo*/
+   border-top: solid #f49842;
+    border-left: solid #f49842;
+    border-bottom: solid gray;
+    border-right: solid gray;
+    border-radius: 1em;
+
+    margin-bottom: 1em;
+
+    background: linear-gradient(#f5f5f5, #c1c1c1);
+}
+@media only screen and (max-width: 1250px){
+	#links {
+		display:none;
+	}
+	.titulos{
+		max-width:100%;
+	}
+	.parrafos{
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 460px){
+	.titulos{
+		height: 6em;
+	}
 }

@@ -144,6 +144,11 @@ h3{
     height: 3em;
 	
 }
+#movil{
+    
+    max-width: 30em;
+    max-height: 30em;
+}
 .parrafos{
     /*tamaños*/
     flex:8 1 60%;

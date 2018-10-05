@@ -186,4 +186,12 @@ h3{
 	.titulos{
 		height: 6em;
 	}
+	.movil {
+		display: none;
+	}
+	#video {
+		display: none;
+	}
+	
+
 }

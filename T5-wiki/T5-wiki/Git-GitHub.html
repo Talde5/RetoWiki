@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>T5-WIKI</title>
+		<meta charset ="UTF-8">
+		<link rel="stylesheet" href="estilo.css">
+	</head>
+	<body id="cont">
+		<header id="cabecera">
+      		<img src="Imagenes/github.png"><img src="Imagenes/git.png">
+   		</header>
+    	<nav id="menu">
+	        <ul>
+	          <li><a href="WIKI.html">Proxmox</a></li>
+	          <li><a href="UbuntuServer.html">VM Ubuntu Server</a></li>
+	          <li><a href="Apache.html">Apache</a></li>
+	          <li><a href="Git-GitHub.html">Git / GitHub</a></li>
+	        </ul>
+      	</nav>
+		<div id="content">
+			<div id="cont-flex">
+				<div class="titulos" id="1">
+					<h3>¿Qué son Git-GitHub?</h3>
+				</div>
+				<div class="parrafos">
+					
+					<p>Git es un software libre que se utiliza para llevar un control de las versiones de tu proyecto, en el que puedes guardar, volver a la versión guardada y actualiza. Git es un software de control de versiones diseñado por Linus Torvalds, que se utiliza para llevar un control de las versiones de tu proyecto cuando éstas tienen un gran número de archivos de código fuente.</p>
+
+					<p>Entre las principales características de Git, se encuentran las siguientes:
+						<ul>
+				           <li>Rapidez en la gestión de ramas y mezclado de diferentes versiones. Git incluye herramientas específicas para navegar y visualizar un historial de desarrollo no lineal.</li>
+				           <li>Git le da a cada programador una copia local del historial del desarrollo entero, y los cambios se propagan entre los repositorios locales.</li>
+				           <li>Los cambios se importan como ramas adicionales y pueden ser fusionados en la misma manera que se hace con la rama local.</li>
+				           <li>Gestión eficiente de proyectos grandes, dada la rapidez de gestión de diferencias entre archivos, entre otras mejoras de optimización de velocidad de ejecución.</li>
+				           <li>Todas las versiones previas a un cambio determinado, implican la notificación de un cambio posterior.</li>
+				           <li>Realmacenamiento periódico en paquetes (ficheros). Esto es relativamente eficiente para escritura de cambios y relativamente ineficiente para lectura si el reempaquetado (con base en diferencias) no ocurre cada cierto tiempo.</li>
+			          </ul>
+					</p>
+					<p>GitHub es una plataforma creada para facilitar el desarrollo colaborativo de software, permite alojar proyectos en la web gratuitamente, por lo general de forma pública, aunque se puede alojar los proyectos de modo provado, pagando una pequeña suscripción mensual.</p>
+
+					<p>Entre las principales características de GitHub, se encuentran las siguientes:
+						<ul>
+			            	<li>Saber dónde obtener información sobre git.</li>
+			            	<li>Conocer el estado e historial de nuestros proyectos.</li>
+			            	<li>Modificar y recuperar estados anteriores.</li>
+			            	<li>Solucionar conflictos entre repositorios.</li>
+			            </ul>
+					</p>
+				</div>
+				<div class="titulos" id="2">
+					<h3>¿Cómo instalar Git-GitHub?</h3>
+				</div>
+				<div class="parrafos">
+					
+					<p>Lo primero que tenemos que hacer es registrarnos en la página de GitHub</p>
+					<ol>
+						<li>
+							Primero nos registramos rellenando con nuestros datos.
+							</br></br>
+							<img class = "movil" src="Imagenes/registro_github.png">
+						</li>
+						<li>
+							Elegimos el plan "Free", sin coste. Esta opción permite compartir globalmente el proyecto. Si quisiesemos que el proyecto fuese privado, tendríamos que pagar una suscripción.
+							</br></br>
+							<img class = "movil" src="Imagenes/plan_github.png">
+						</li>
+					</ol>
+					<p>Para instalar Git, nos dirigiremos al servidor Ubuntu y abriremos la terminal. Una vez ahí, ejecutaremos los siguientes comandos:
+					</p>
+					<ol>
+						<li>
+							El primer paso es instalar Git.
+							</br></br>
+							<i>sudo apt-get install git</i>
+						</li>
+						<img class = "movil" src="Imagenes/instalar_git.png">
+						<li>
+							Una vez instalado, nos situamos en el directorio donde queramos alojar el proyecto.
+							</br></br>
+							<i>cd /var/www/html</i>
+							</br></br>
+							<img class = "movil" src="Imagenes/varwwwhtml_git.png">
+							</br></br>
+							Iniciamos Git en ese directorio.
+							</br></br>
+							<i>git init</i>
+						</li>
+						<img class = "movil" src="Imagenes/init_git.png">
+						<li>
+							Asignamos nuestro repositorio creado posteriormente en GitHub.
+							</br></br>
+							<i>git remote add origin https://github.com/Talde5/RetoWiki.git</i>
+						</li>
+						<img class = "movil" src="Imagenes/remoteaddorigin_git.png">
+						<li>
+							Ahora debemos identificarnos como si estuviesemos en GitHub.
+							</br></br>
+							<i>git config --global user.mail Talde5eusk@gmail.com</i>
+						</li>
+						<img class = "movil" src="Imagenes/config_git.png">
+						<li>
+							Ahora procederemos a subir los archivos a GitHub.
+							</br></br>
+							<i>git add .</i>
+						</li>
+						<img class = "movil" src="Imagenes/add_git.png">
+						<li>
+							Ahora le ponemos un nombre a la copia.
+							</br></br>
+							<i>git commit -m "nombre"</i>
+						</li>
+						<img class = "movil" src="Imagenes/commit_git.png">
+						<li>
+							Por ultimo subimos la copia a GitHub.
+							</br></br>
+							<i>git push -u origin master</i>
+							</br></br></br></br>
+							Nos pedira el nombre de usuario:
+							</br></br>
+							<i>Talde5</i>
+							</br></br>
+							</br></br>
+							Nos pedira la contraseña:
+							</br></br>
+							<i>Euskera2018_</i>
+						</li>
+						<img class = "movil" src="Imagenes/push_git.png">
+						<li>
+							Para descargarnos el proyecto, una vez esté ya subido a GitHub.
+							</br></br>
+							<i>git pull origin master</i>
+						</li>
+						<img class = "movil" src="Imagenes/pull_git.png">
+						<li>
+			                En este video se realiza el proceso desde 0.
+			                <br>
+			                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/M763B05rr1U?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			            </li>
+					</ol>
+				</div>
+				<div class="titulos" id="3">
+					<h3>¿Qué requisitos necesitamos?</h3>
+				</div>
+				<div class="parrafos">
+					
+						<ul>
+				            <li>Linux kernel version 2.4 o posterior, glibc2 version 2.3.2 o posterior (inicio con OOo 3.3 glibc2 version 2.5 o mayor) 256 Mbytes RAM (512 MB recomendado)</li>
+				            <li>Espacio de disco de 400 Mbytes</li>
+				            <li>X-Server con 1024 x 768 o mayor resolucion con 256 colores</li>
+          				</ul>
+				</div>
+				<div class="titulos" id="4">
+					<audio src="GatibuEuritan.mp3" autobuffer autoloop loop controls></audio>
+				</div>
+			</div>
+			<div id="links">
+				<ul>
+					<li><a href="">Inicio</a><br/></li>
+					<li><a href="#1">¿Qué son Git-GitHub?</a><br/></li>
+					<li><a href="#2">¿Cómo instalar Git-GitHub?</a><br/></li>
+					<li><a href="#3">¿Qué requisitos necesitamos?</a><br/></li>
+					<li><a href="#4">Adudio</a><br/></li>
+				</ul>
+			</div>
+		</div>
+		<footer id="pie">
+
+			<h4>Talde 5·Ander Itza·Jon Benjamin Ahedo·Andrea Fernandez</h4>
+		</footer>
+	</body>
+</html>

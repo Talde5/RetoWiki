@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>T5-WIKI</title>
+		<meta charset ="UTF-8">
+		<link rel="stylesheet" href="estilo.css">
+	</head>
+	<body id="cont">
+		<header id="cabecera">
+      		<img src="Imagenes/apache.png">
+   		</header>
+    	<nav id="menu">
+	        <ul>
+	          <li><a href="WIKI.html">Proxmox</a></li>
+	          <li><a href="UbuntuServer.html">VM Ubuntu Server</a></li>
+	          <li><a href="Apache.html">Apache</a></li>
+	          <li><a href="Git-GitHub.html">Git / GitHub</a></li>
+	        </ul>
+      	</nav>
+		<div id="content">
+			<div id="cont-flex">
+			<div class="titulos" id="1">
+					<h3>¿Qué es Apache?</h3>
+				</div>
+				<div class="parrafos">
+					
+					<p> Apache es un poderoso servidor web, cuyo nombre proviene de la frase inglesa “a patchy server” y es completamente libre, ya que es un software Open Source y con licencia GPL. Una de las ventajas más grandes de Apache, es que es un servidor web multiplataforma, es decir, puede trabajar con diferentes sistemas operativos y mantener su excelente rendimiento.Desde el año 1996, es el servidor web más popular del mundo, debido a su estabilidad y seguridad. Apache sigue siendo desarrollado por la comunidad de usuarios desarrolladores que trabaja bajo la tutela de Apache Software Foundation.</p>
+
+					<p>Entre las principales características de Apache, se encuentran las siguientes:
+						<ul>
+							<li>Soporte de seguridad SSL y TLS.</li>
+							<li>Puede realizar autentificación de datos utilizando SGDB.</li>
+							<li>Puede dar soporte a diferentes lenguajes, como Perl, PHP, Python y tcl.</li>
+						</ul>
+					</p>
+					
+					<p>Apache es utilizado principalmente, para realizar servicio a páginas web, ya sean estáticas o dinámicas. Este estupendo servidor se integra a la perfección con otras aplicaciones, creando el famoso paquete XAMP con Perl, Python, MySQL y PHP, junto a cualquier sistema operativo, que por lo general es Linux, Windows o Mac OS.</p>
+				</div>
+				<div class="titulos" id="2">
+					<h3>¿Cómo instalar Apache?</h3>
+				</div>
+				<div class="parrafos">
+					<h4>¿Cómo instalar Apache?</h4>
+					<p>Para instalar Apache, nos dirigiremos al servidor Ubuntu y abriremos la terminal. Una vez ahí, ejecutaremos los siguientes comandos:
+					</p>
+					<ol>
+						<li>
+							El primer paso es actualizar los repositorios de Ubuntu server.
+							</br></br>
+							<i>sudo apt-get update</i>
+						</li>
+						<img src="Imagenes/apt-get update_apache.png">
+						<li>
+							Ahora procederemos a instalar Apache.
+							</br></br>
+							<i>sudo apt-get install apache2</i>
+						</li>
+						<img src="Imagenes/instalar_apache.png">
+						<li>
+							Una vez instalado, lo iniciamos.
+							</br></br>
+							<i>sudo service apache2 start</i>
+							</br></br>
+							<img src="Imagenes/apache2start_apache.png">
+							</br></br>
+							Si queremos verificar en que estado se encuentra Apache, ejecutaremos el siguiente comando.
+							 </br></br>
+							<i>sudo service apache2 status</i>
+						</li>
+						<img src="Imagenes/apache2status_apache.png">
+						<li>
+							Ahora vamos a configurar Apache para usarlo con Ubuntu server.
+							</br></br>
+							<i>nano /etc/apache2/apache2.conf</i>
+						<img src="Imagenes/apacheconf_apache.png">
+							</br></br>
+							Una vez dentro del archivo, bajamos hasta abajo del todo y escribimos lo siguiente.
+							</br></br>
+							<i>ServerName 10.9.52.108</i>
+						</li>
+						<img src="Imagenes/nanoapache2conf_apache.png">
+						<li>
+							Una vez esté iniciado, iremos al navegador y pondremos la dirección IP (10.9.52.108)
+							</br>
+							Tendremos que ver la página por defecto de Apache en Ubuntu:
+						</li>
+						<img src="Imagenes/itworks_apache.png">
+						<li>
+							En este video se realiza el proceso desde 0.
+						</li>
+						<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/s2jF_iLsM2A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</ol>
+				</div>
+				<div class="titulos" id="3">
+					<h3>¿Qué requisitos necesitamos?</h3>
+				</div>
+				<div class="parrafos">
+					
+						<ul>
+				            <li>Linux kernel version 2.4 o posterior, glibc2 version 2.3.2 o posterior (inicio con OOo 3.3 glibc2 version 2.5 o mayor) 256 Mbytes RAM (512 MB recomendado)</li>
+				            <li>Espacio de disco de 400 Mbytes</li>
+				            <li>X-Server con 1024 x 768 o mayor resolucion con 256 colores</li>
+          				</ul>
+				</div>
+				<div class="titulos" id="4">
+					<audio src="GatibuEuritan.mp3" autobuffer autoloop loop controls></audio>
+				</div>
+			</div>
+			<div id="links">
+				<ul>
+					<li><a href="">Inicio</a><br/></li>
+					<li><a href="#1">¿Qué es Apache?</a><br/></li>
+					<li><a href="#2">¿Cómo instalar Apache?</a><br/></li>
+					<li><a href="#3">¿Qué requisitos necesitamos?</a><br/></li>
+					<li><a href="#4">Audio</a><br/></li>
+				</ul>
+			</div>
+		</div>
+		<footer id="pie">
+
+			<h4>Talde 5·Ander Itza·Jon Benjamin Ahedo·Andrea Fernandez</h4>
+		</footer>
+	</body>
+</html>

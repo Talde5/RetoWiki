@@ -21,24 +21,34 @@
 			
 		<div id="content">
 			<div id="cont-flex">
-				<div class="parrafos" id="1">
-					<h4>Que es Proxmox?</h4>
+				<div class="titulos" id="1">
+					<h3>Que es Proxmox?</h3>
+				</div>
+				<div class="parrafos">
+					
 					<p>Proxmox es un software de virtualización basado en Debian. 	Es muy parecido a VMWare, con una interfaz intuitiva.
 					</p>
 					
 					
 					
 				</div>
-				<div class="parrafos" id="2">
-					<h4>¿Dónde descargamos Proxmox?</h4>
+				<div class="titulos" id="2">
+					<h3>¿Dónde descargamos Proxmox?</h3>
+				</div>
+				<div class="parrafos">
+					
 					<p>Para descargarlo, nos dirigiremos a la página oficial y 	entraremos en Downloads. Nos descargamos la última 	versión:
 					</p>
 					<p><a href = "https://www.proxmox.com/en/downloads">https://www.proxmox.com/en/downloads</a></p>
 					
 					
 				</div>
-				<div class="parrafos" id="3">
-					<h4>Como instalar Proxmox?</h4>
+				<div class="titulos" id="3">
+					<h3>Como instalar Proxmox?</h3>
+				</div>
+				<div class="parrafos">
+				
+					
 					<ol>
 			            <li>El primer paso que realizamos es descargar la iso de Proxmox.
 			              <br>
@@ -60,29 +70,29 @@
 			         
 			               En este caso elegiremos la primera opcion(Install Proxmox VE) y a continuacion veremos como se inicia el arranque del sistema
 			            </li>
-			            <img id = "movil"src="Imagenes/PrimeraPantalla.png">
+			            <img class = "movil" src="Imagenes/PrimeraPantalla.png">
 			             <li>
 			                Esperamos hasta que deje de carga el texto y le damos a enter para cargar la siguiente pantalla.
 			                 
 
 			            </li>
-			            <img id = "movil" src="Imagenes/cargaprimera.jpg">
+			            <img class = "movil" src="Imagenes/cargaprimera.jpg">
 			            <li>
 			                La siguiente pantalla es un acuerdo de licencia que hay que aceptar para poder continuar.
 			                
 			            </li>
-			            <img id = "movil" src="Imagenes/UserLicense.jpg">
+			            <img class = "movil" src="Imagenes/UserLicense.jpg">
 			            <li>
 			                Lo siguiente que nos pregunta es donde queremos instalar Proxmox. Si tu ordenador dispone de más de un disco, sólo tendrás que desplegar la lista y elegir el adecuado. Elegimos el espacio del servidor y le damos a Next.
 			                
 			               
 			            </li>
-			            <img id = "movil" src="Imagenes/ElegirDisco.jpg">
+			            <img class = "movil" src="Imagenes/ElegirDisco.jpg">
 			            <li>
 			                Elegimos el país, el horario y el idioma del teclado y le damos a Next.
 			                
 			            </li> 
-			            <img id = "movil" src="Imagenes/ZonaHoraria.jpg">
+			            <img class = "movil" src="Imagenes/ZonaHoraria.jpg">
 			            <li>
 			                Ingresamos la contraseña para el usuario <i>root</i> con el que nos loguearemos después. Insertamos un correo, por si se da el caso de que el servidor tenga algún error nos lo notifiquen.
 			                <br>
@@ -91,7 +101,7 @@
 			            
 			                <p><i>- Contraseña:</i> admin</p>
 			            </li>
-			            <img id = "movil" src="Imagenes/ZonaHoraria.jpg">
+			            <img class = "movil" src="Imagenes/ZonaHoraria.jpg">
 			            <li>
 			            	
 			               Le damos a Next y lo siguiente que tenemos que rellenar es:<br>
@@ -102,7 +112,7 @@
     						   • Gateway: La dirección por donde saldremos a Internet. <br>
    							   • Servidor DNS: Es importante que tengamos salida a Internet para 								poder hacer una actualización por lo menos la primera vez 										después de instalarlo, ya que dependiendo de la fecha que 										descarguemos el software se habrán 		echo mejoras que sería 								bueno tenerla actualizadas, más que nada por seguridad. <br>
 			                <br>
-			                 <img id = "movil" src="Imagenes/IP.jpg">
+			                 <img class = "movil" src="Imagenes/IP.jpg">
 			                  <p> Lo siguiente es un ejemplo:</p>
 			                <p><i>- Nombre del dominio:</i> pve.h015110.net</p>
 			                <p><i>- Dirección IP:</i> 10.9.53.15</p>
@@ -113,12 +123,12 @@
 			            <li>
 			                Le damos a Next y esperamos que se instale. Una vez que la instalación se complete, reiniciaremos el servidor.
 			            </li>
-			              <img id = "movil" src="Imagenes/Pantalladecarga.jpg">
+			              <img class = "movil" src="Imagenes/Pantalladecarga.jpg">
 
 			            <li>
 			                Al reiniciarse la máquina nos encontramos con un Servidor Debian en el que nos tenemos que logear con el usurio root y la contraseña que le dimos en la instalación. También podemos darnos cuenta que nos muestra la dirección del servidor web con el que nos podemos conectar desde un navegador para poder hacer las configuraciones de una forma más sencilla.
 			                <br>
-			                 <img id = "movil" src="Imagenes/Primeriniciodesesion.png">
+			                 <img class = "movil" src="Imagenes/Primeriniciodesesion.png">
 			                <p><i>- Nombre:</i> root</p>
 			                <p><i>- Contraseña:</i> admin</p>
 			            </li>
@@ -130,8 +140,11 @@
 			        </ol>
 					
 				</div>
-				<div class="parrafos" id="4">
-					<h4>Primeros pasos</h4>
+				<div class="titulos" id="4">
+					<h3>Primeros pasos</h3>
+				</div>
+				<div class="parrafos">
+					
 					  <p>
 			               Ahora que ya tenemos nuestro servidor actualizado es necesario hacer las últimas revisiones para ver si está todo correcto.Tenemos dos forma de entrar a la administración de Proxmox:  <br>
    							 • Consola SSH:   <br>
@@ -140,21 +153,24 @@
 							La primera vez que ingresamos la dirección IP junto con el puerto nos saldrá un aviso de advertencia.
 							
 			            </p>
-			            <img id = "movil" src="Imagenes/AdvertenciaWeb.jpg">
+			            <img class = "movil" src="Imagenes/AdvertenciaWeb.jpg">
 			             	<p>
 			                Lo que tenemos que hacer es indicar al navegador de que confiamos en este servidor y añadimos una excepción, para que no nos vuelva a dar esta advertencia.
 			                   </p>
-			                <img id = "movil" src="Imagenes/Excepcion.jpg">
-			                <img id = "movil" src="Imagenes/Excepcion2.jpg">
+			                <img class = "movil" src="Imagenes/Excepcion.jpg">
+			                <img class = "movil" src="Imagenes/Excepcion2.jpg">
 			           		 <p>
 			                Confirmamos y vemos que nos muestra una pantalla en la que nos tenemos que loguear con el usuario root y la contraseña indicada en la instalación.</p>
-			                 <img id = "movil" src="Imagenes/Logearnos.jpg">
+			                 <img class = "movil" src="Imagenes/Logearnos.jpg">
 			                <p>
 			             	Y ya disponemos de un Servidor Proxmox listo para virtualizar.
 			                  		 </p>
-			           		  <img id = "movil" src="Imagenes/Proxmox.jpg"> 
+			           		  <img class = "movil" src="Imagenes/Proxmox.jpg"> 
 					
 					
+				</div>
+				<div class="titulos" id="5">
+					<audio src="GatibuEuritan.mp3" autobuffer autoloop loop controls></audio>
 				</div>
 				
 			</div>
@@ -165,6 +181,7 @@
 					<li><a href="#2">¿Dónde descargamos Proxmox?</a><br/></li>
 					<li><a href="#3">Como Instalar Proxmox?</a><br/></li>
 					<li><a href="#4">Primeros pasos</a><br/></li>
+					<li><a href="#5">Adudio</a><br/></li>
 				</ul>
 			</div>
 		</div>

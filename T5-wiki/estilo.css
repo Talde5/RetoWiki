@@ -105,11 +105,11 @@ h3{
 	position: fixed;
 	right:3.5%;
 	top:35%;
-	padding: 1em;
+	padding: 1em 0.5em 1em 0.5em;
 	border-bottom: solid gray;
     border-right: solid gray;
     border-radius: 1em;
-    font: bold 16px sans-serif;
+    font: bold 12px sans-serif;
 
     background: linear-gradient(#f5f5f5, #c1c1c1);
 
@@ -144,7 +144,7 @@ h3{
     height: 3em;
 	
 }
-#movil{
+.movil{
     
     max-width: 30em;
     max-height: 30em;
